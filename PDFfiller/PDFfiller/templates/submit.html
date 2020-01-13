@@ -1,0 +1,209 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+    <title>Demand Wealth Financial Plan</title>
+
+
+    <style>
+    body {
+      margin-top: 10px;
+      padding-top: 5rem;
+      padding-bottom: 2rem;
+      margin-bottom: 60px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+     }
+
+     p, label, h1, h2, h3, h4, h5, h6 {
+      font-family: 'Archivo', sans-serif;
+      font-weight: 500;
+     }
+
+
+    .starter-template {
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    h3 {
+      margin-top: 2rem;
+    }
+
+    .gray {
+    background-color: #A9A9A9;
+    }
+    .row {
+      padding-left: 6.5rem;
+    }
+    .row .row {
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+    [class*="col-"] {
+      padding-top: 1rem;
+
+    }
+
+    hr {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    html {
+    position: relative;
+    min-height: 100%;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+  }
+  .first {
+    background-color: #14345D;
+    border-style: solid;
+    border-width: 1px;
+  }
+  .second {
+    background-color: #B3D3FC;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .border {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .b2 {
+    border-top: solid black 1px;
+    border-left: solid black 1px;
+    border-bottom: solid black 1px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .b3 {
+    border-top: solid black 1px;
+    border-right: solid black 1px;
+    border-bottom: solid black 1px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .responsive {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .wrapper {
+      display: flex;
+      width: 100%;
+  }
+
+  #sidebar {
+      width: 250px;
+      position: fixed;
+      top: 55;
+      left: 0;
+      height: 100vh;
+      z-index: 999;
+      background: #7386D5;
+      color: #fff;
+      transition: all 0.3s;
+  }
+
+  #child {
+    position: relative;
+    right: 40px;
+  }
+  .form-control {
+    line-height: 50px;
+    background-color: #FFE4B5;
+  }
+
+  .wide {
+    line-height: 100px;
+  }
+
+  .nofill {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    line-height: 40px;
+    background-color: #FFE4B5;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  hr {
+    width: 100%;
+    height: 2px;
+    background-color:#666;
+  }
+
+  </style>
+  </head>
+  {% load static %}
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img src="{% static "demand logo2.png" %}" width="130" height="65" class="d-inline-block align-top" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'home' %}"><h5> &nbsp &nbsp Back </h5><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'load' %}"><h5>&nbsp &nbsp Update Plan</h5></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <main role="main" class="container">
+      <h3>Thank you for for filling out your financial planning and expense worksheet! You can update your plan at any time by clicking "Update Plan". A Demand Wealth representative will reach out to you shortly with further instructions regarding your financial plan.
+      </h3>
+</main>
+</html>

@@ -1,0 +1,1363 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Demand Wealth Financial Plan </title>
+
+
+
+    <style>
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+
+    body {
+      margin-top: 10px;
+      padding-top: 5rem;
+      padding-bottom: 2rem;
+      margin-bottom: 60px;
+    }
+
+
+    .starter-template {
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    h3 {
+      margin-top: 2rem;
+    }
+
+    .gray {
+    background-color: #A9A9A9;
+    }
+    .row {
+      padding-left: 6.5rem;
+    }
+    .row .row {
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+    [class*="col-"] {
+      padding-top: 1rem;
+
+    }
+
+    hr {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    html {
+    position: relative;
+    min-height: 100%;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+  }
+  .first {
+    background-color: #14345D;
+    border-style: solid;
+    border-width: 1px;
+  }
+  .second {
+    background-color: #B3D3FC;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .border {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .b2 {
+    border-top: solid black 1px;
+    border-left: solid black 1px;
+    border-bottom: solid black 1px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .b3 {
+    border-top: solid black 1px;
+    border-right: solid black 1px;
+    border-bottom: solid black 1px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .responsive {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .wrapper {
+      display: flex;
+      width: 100%;
+  }
+
+  #sidebar {
+      width: 250px;
+      position: fixed;
+      top: 55;
+      left: 0;
+      height: 100vh;
+      z-index: 999;
+      background: #7386D5;
+      color: #fff;
+      transition: all 0.3s;
+  }
+
+  #child {
+    position: relative;
+    right: 40px;
+  }
+  .form-control {
+    line-height: 50px;
+    background-color: #FFE4B5;
+  }
+
+  .yellow {
+    background-color: #FFE4B5;
+  }
+
+  .wide {
+    line-height: 100px;
+  }
+
+  .nofill {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    line-height: 40px;
+    background-color: #FFE4B5;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  hr {
+    width: 100%;
+    height: 2px;
+    background-color:#666;
+  }
+
+  </style>
+  </head>
+  {% load static %}
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img src="{% static "demand logo2.png" %}" width="130" height="65" class="d-inline-block align-top" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'home' %}"><h5> Home </h5><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'load' %}"><h5>&nbsp &nbsp Update Plan</h5></a>
+            </li>
+          </ul>
+          <form action="{% url 'display' %}" method = "post">
+            <input type="submit" class="btn btn-warning btn-lg" value="Submit" >
+        </div>
+      </nav>
+    </header>
+
+
+
+    <main role="main" class="container">
+
+      <div class="form-group" style="border:2px solid black;">
+        <img src="{% static "head2.png" %}"  class="responsive">
+        <img src="{% static "start.png" %}"  class="responsive">
+        <div class="form-group row">
+          <div class="col-8">
+            <input class = "form-control" type="text" placeholder="Please Enter Your Full Name" name="name">
+          </div>
+          <div class="col-3">
+            <input class = "form-control" type="date"  placeholder="Enter Today's Date" name="date">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-8">
+            <input class = "form-control" type="text" placeholder="Please Enter Your Email" name="email">
+          </div>
+          <div class="col-3">
+            <input class = "form-control" type="number"  placeholder="Enter a PIN" name="pin">
+          </div>
+        </div>
+        </br></br></br>
+        <div class="form-group row">
+          <div class="col-11"> <label style="color:#14345D;"> Mink Wealth Management regards the confidentiality of client data to be of utmost importance and does not share data with any third party. All of your information is secured and encrypted by Amazon's cloud-based storage security system.</label> </div>
+        </div>
+        <img src="{% static "2.png" %}"  class="responsive">
+        <hr>
+
+        <img src="{% static "3.png" %}"  class="responsive">
+      </br></br>
+
+
+      <p>Collapsible Set:</p>
+      <div class="collapsible">Open Section 1</div>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="collapsible">Open Section 2</div>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="collapsible">Open Section 3</div>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+      </script>
+
+
+        <div class="row">
+          <div class="col-6">  <input type="checkbox" name="Retired" value="True" > <label style="color:#14345D;">Retired/ Retiring Soon </label> </div>
+          <div class="col-5">  <input type="checkbox" name="Marriage" value="True" > <label style="color:#14345D;"> Marriage </label> </div>
+        </div>
+        <div class="row">
+          <div class="col-6">  <input type="checkbox" name="SellBus" value="True" > <label style="color:#14345D;"> Selling Your Business </label> </div>
+          <div class="col-5">  <input type="checkbox" name="Div" value="True" > <label style="color:#14345D;">  Divorce or Separation </label></div>
+        </div>
+        <div class="row">
+          <div class="col-6">  <input type="checkbox" name="RefBus" value="True" > <label style="color:#14345D;"> Refinancing Your Business</label>  </div>
+          <div class="col-5">  <input type="checkbox" name="BirthC" value="True" >  <label style="color:#14345D;">Birth of a Child </label></div>
+        </div>
+        <div class="row">
+          <div class="col-6">  <input type="checkbox" name="FailBus" value="True" >  <label style="color:#14345D;">Failure of Business </label> </div>
+          <div class="col-5">  <input type="checkbox" name="BirthGC" value="True" > <label style="color:#14345D;"> Birth of a Grandchild </label></div>
+        </div>
+        <div class="row">
+          <div class="col-6">  <input type="checkbox" name="JobLoss" value="True" > <label style="color:#14345D;"> Losing your Job </label> </div>
+          <div class="col-5">  <input type="checkbox" name="Remarry" value="True" > <label style="color:#14345D;"> Remarriage </label></div>
+        </div>
+        <div class="row">
+          <div class="col-6">  <input type="checkbox" name="College" value="True" > <label style="color:#14345D;"> Children go to College </label> </div>
+          <div class="col-5">  <input type="checkbox" name="Reloc" value="True" > <label style="color:#14345D;"> Relocation for Retirement</label> </div>
+        </div>
+        <div class="row">
+          <div class="col-6">  <input type="checkbox" name="LastChild" value="True" >  <label style="color:#14345D;">Last Child Leaves Home </label> </div>
+          <div class="col-5">  <input type="checkbox" name="MoveIn" value="True" > <label style="color:#14345D;"> Parent/ other relative moving in with you </label></div>
+        </div>
+        <div class="row">
+          <div class="col-6">  <input type="checkbox" name="ChildMarry" value="True" > <label style="color:#14345D;"> Child Marries </label> </div>
+          <div class="col-5">  <input type="checkbox" name="DisabilityPar" value="True" > <label style="color:#14345D;"> Disability or Chronic Illness of Parent/Grandparent</label> </div>
+        </div>
+        <div class="row">
+          <div class="col-6">  <input type="checkbox" name="ACDiv" value="True" >  <label style="color:#14345D;">Adult Child Divorces or Separates</label>  </div>
+          <div class="col-5">  <input type="checkbox" name="DisabilityAC" value="True" > <label style="color:#14345D;"> Disability or Chronic Illness of Adult Child</label> </div>
+        </div>
+        <div class="row">
+          <div class="col-6">  <input type="checkbox" name="ACRemarry" value="True" >  <label style="color:#14345D;">Adult Child Remarries</label>  </div>
+          <div class="col-5">  <input type="checkbox" name="RelocPar" value="True" > <label style="color:#14345D;"> Relocation of Parent, Spouse or You </label></div>
+        </div>
+        <div class="row">
+          <div class="col-6">  <input type="checkbox" name="PurHome" value="True" > <label style="color:#14345D;"> Purchase of a Home  </label></div>
+          <div class="col-5">  <input type="checkbox" name="DeathPar" value="True" > <label style="color:#14345D;"> Death of Parent/ Grandparent</label> </div>
+        </div>
+        <div class="row">
+          <div class="col-6">  <input type="checkbox" name="SellHome" value="True" > <label style="color:#14345D;"><label style="color:#14345D;"> Selling Your Home </label> </div>
+          <div class="col-5">  <input type="checkbox" name="DeathChild" value="True" > <label style="color:#14345D;"> Death of Child or a Child's Spouse</label> </div>
+        </div>
+        <div class="row">
+          <div class="col-6">  <input type="checkbox" name="SellProp" value="True" > <label style="color:#14345D;"> Selling another Property </label> </div>
+          <div class="col-5">  <input type="checkbox" name="DeathSpouse" value="True" > <label style="color:#14345D;"> Death of Spouse</label> </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <input type="checkbox" name="BuyProp" value="True" >  <label style="color:#14345D;">Buying another Property </label> </br> </br>
+            <input type="checkbox" name="Legacy" value="True" >  <label style="color:#14345D;"> Leaving a Legacy</label> </br> </br>
+            <input type="checkbox" name="Inherit" value="True" > <label style="color:#14345D;"> Inheriting an IRA, Life Insurance, or Other Assets  </label></br> </br>
+            <input type="checkbox" name="NewEmp" value="True" > <label style="color:#14345D;">New Employer/ New Career</label>  </br> </br>
+            <input type="checkbox" name="SpouseStart" value="True" >  <label style="color:#14345D;">Spouse Begins Work </label> </br> </br>
+            <input type="checkbox" name="SpouseStop" value="True" > <label style="color:#14345D;"> Spouse Stops Work  </label></br> </br>
+            <input type="checkbox" name="RelocJob" value="True" > <label style="color:#14345D;"> Relocation for a New Job </label> </br> </br>
+            <input type="checkbox" name="StartBus" value="True" >  <label style="color:#14345D;">Start-up New Business</label>
+          </div>
+          <div class="col-5"><label style="color:#14345D;"> Notes: </label><textarea class="form-control" rows="6" name="notes" name="text"></textarea> </div>
+        </div>
+        <img src="{% static "2.png" %}"  class="responsive">
+        <hr>
+
+        <img src="{% static "4.png" %}"  class="responsive">
+        <div class="row">
+          <div class="first col-11" > <p style="color:#FFFFFF; text-align:center;"> Primary Client's Income - (Before Taxes) </p> </div>
+        </div>
+        <div class ="row">
+          <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Source of Income </label> </div>
+          <div class="second col-2"> <label style="color:#14345D;font-size:12px;"> ~Start Date </label> </div>
+          <div class="second col-2"> <label style="color:#14345D;font-size:12px;"> ~End Date </label> </div>
+          <div class="second col-2"> <label style="color:#14345D;font-size:12px;"> ~Monthly </label> </div>
+          <div class="second col-2"> <label style="color:#14345D;font-size:12px;"> ~Lump Sum/Bonus </label> </div>
+        </div>
+        <div class ="row">
+          <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Full Time Employment </label> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="FTEstart1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="FTEend1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="FTEmonth1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="FTEbonus1">  </div>
+        </div>
+        <div class ="row">
+          <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Part Time Employment </label> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="PTEstart1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="PTEend1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="PTEmonth1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="PTEbonus1">  </div>
+        </div>
+        <div class ="row">
+          <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Pensions </label> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="PENstart1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="PENend1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="PENmonth1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="PENbonus1">  </div>
+        </div>
+        <div class ="row">
+          <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Social Security </label> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="SSstart1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="SSend1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="SSmonth1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="SSbonus1">  </div>
+        </div>
+        <div class ="row">
+          <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Rental Income </label> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="RIstart1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="RIend1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="RImonth1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="RIbonus1">  </div>
+        </div>
+        <div class ="row">
+          <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Expected Inheritance </label> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="EIstart1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="EIend1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="EImonth1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="EIbonus1">  </div>
+        </div>
+        <div class ="row">
+          <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Sale Of Business </label> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="SBstart1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="SBend1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="SBmonth1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="SBbonus1">  </div>
+        </div>
+        <div class ="row">
+          <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Sale of Real Estate </label> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="SREstart1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="SREend1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="SREmonth1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="SREbonus1">  </div>
+        </div>
+        <div class ="row">
+          <div class="border col-3"> <input class = "nofill form-control" type="text" placeholder ="other" name="other11"></div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="o1start1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="o1end1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="o1month1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="o1bonus1">  </div>
+        </div>
+        <div class ="row">
+          <div class="border col-3"> <input class = "nofill form-control" type="text" placeholder ="other" name="other21"></div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="o2start1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="o2end1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="o2month1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="o2bonus1">  </div>
+        </div>
+        <div class ="row">
+          <div class="border col-3"> <input class = "nofill form-control" type="text" placeholder ="other" name="other31"></div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="o3start1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="date" name="o3end1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="o3month1">  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="o3bonus1">  </div>
+        </div>
+      </br></br>
+      <div class="row">
+        <div class="first col-11" > <p style="color:#FFFFFF; text-align:center;"> Co-Client's Income - (Before Taxes) </p> </div>
+      </div>
+      <div class ="row">
+        <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Source of Income </label> </div>
+        <div class="second col-2"> <label style="color:#14345D;font-size:12px;"> ~Start Date </label> </div>
+        <div class="second col-2"> <label style="color:#14345D;font-size:12px;"> ~End Date </label> </div>
+        <div class="second col-2"> <label style="color:#14345D;font-size:12px;"> ~Monthly </label> </div>
+        <div class="second col-2"> <label style="color:#14345D;font-size:12px;"> ~Lump Sum/Bonus </label> </div>
+      </div>
+      <div class ="row">
+        <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Full Time Employment </label> </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="FTEstart2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="FTEend2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="FTEmonth2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="FTEbonus2">  </div>
+      </div>
+      <div class ="row">
+        <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Part Time Employment </label> </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="PTEstart2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="PTEend2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="PTEmonth2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="PTEbonus2">  </div>
+      </div>
+      <div class ="row">
+        <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Pensions </label> </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="PENstart2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="PENend2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="PENmonth2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="PENbonus2">  </div>
+      </div>
+      <div class ="row">
+        <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Social Security </label> </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="SSstart2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="SSend2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="SSmonth2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="SSbonus2">  </div>
+      </div>
+      <div class ="row">
+        <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Rental Income </label> </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="RIstart2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="RIend2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="RImonth2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="RIbonus2">  </div>
+      </div>
+      <div class ="row">
+        <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Expected Inheritance </label> </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="EIstart2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="EIend2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="EImonth2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="EIbonus2">  </div>
+      </div>
+      <div class ="row">
+        <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Sale Of Business </label> </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="SBstart2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="SBend2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="SBmonth2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="SBbonus2">  </div>
+      </div>
+      <div class ="row">
+        <div class="second col-3"> <label style="color:#14345D;font-size:12px;"> Sale of Real Estate </label> </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="SREstart2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="SREend2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="SREmonth2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="SREbonus2">  </div>
+      </div>
+      <div class ="row">
+        <div class="border col-3"> <input class = "nofill form-control" type="text" placeholder ="other" name="other12"></div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="o1start2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="o1end2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="o1month2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="o1bonus2">  </div>
+      </div>
+      <div class ="row">
+        <div class="border col-3"> <input class = "nofill form-control" type="text" placeholder ="other" name="other22"></div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="o2start2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="o2end2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="o2month2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="o2bonus2">  </div>
+      </div>
+      <div class ="row">
+        <div class="border col-3"> <input class = "nofill form-control" type="text" placeholder ="other" name="other32"></div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="o3start2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="date" name="o3end2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="o3month2">  </div>
+        <div class="border col-2"> <input class = "nofill form-control" type="number" name="o3bonus2">  </div>
+      </div>
+      </br></br>
+      <div class="row">
+        <div class="col-11"> <label style="color:#14345D;"> Notes: </label> </div>
+      </div>
+      <div class = "row">
+        <div class="col-11"><textarea class="form-control" rows="3" name="n1" name="text"></textarea> </div>
+      </div>
+      <img src="{% static "2.png" %}"  class="responsive">
+      <hr>
+
+      <img src="{% static "5.png" %}"  class="responsive">
+      <div class="row">
+        <div class="first col-2" > <label style="color:#FFFFFF;">  </label> </div>
+        <div class="first col-3" > <label style="color:#FFFFFF;"> First Property </label> </div>
+        <div class="first col-3" > <label style="color:#FFFFFF;"> Second Property </label> </div>
+        <div class="first col-3" > <label style="color:#FFFFFF;"> Third Property </label> </div>
+      </div>
+      <div class ="row">
+        <div class="second col-2"> <label style="color:#14345D;"> Address </label> </div>
+        <div class="border yellow col-3"> <input class = "nofill form-control" type="text" placeholder ="Street:" name="street1">
+          <input class = "nofill form-control" type="text" placeholder ="City:" name="city1">
+          <input class = "nofill form-control" type="text" placeholder ="State:" name="state1">
+          <input class = "nofill form-control" type="number" placeholder ="Zip:" name="zip1"> </div>
+        <div class="border yellow col-3"> <input class = "nofill form-control" type="text" placeholder ="Street:" name="street2">
+          <input class = "nofill form-control" type="text" placeholder ="City:" name="city2">
+          <input class = "nofill form-control" type="text" placeholder ="State:" name="state2">
+          <input class = "nofill form-control" type="number" placeholder ="Zip:" name="zip2"> </div>
+        <div class="border yellow col-3"> <input class = "nofill form-control" type="text" placeholder ="Street:" name="street3">
+          <input class = "nofill form-control" type="text" placeholder ="City:" name="city3">
+          <input class = "nofill form-control" type="text" placeholder ="State:" name="state3">
+          <input class = "nofill form-control" type="number" placeholder ="Zip:" name="zip3"> </div>
+      </div>
+      <div class ="row">
+          <div class="second col-2"> <label style="color:#14345D;"> Market Value </label> </br>
+            <label style="color:#14345D;font-size:11px;"> zillow.com can provide an estimate </label> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="value1"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="value2"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="value3"> </div>
+      </div>
+      <div class ="row">
+          <div class="second col-2"> <label style="color:#14345D;"> Interest Rate </label> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="text" name="IR1"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="text" name="IR2"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="text" name="IR3"> </div>
+      </div>
+      <div class ="row">
+          <div class="second col-2"> <label style="color:#14345D;"> Monthly Payment </label> </br>
+            <label style="color:#14345D;font-size:11px;"> Principle, Taxes & Interest </label> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="MP1"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="MP2"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="MP3"> </div>
+      </div>
+      <div class ="row">
+          <div class="second col-2"> <label style="color:#14345D;font-size:11.5px;"> Current Balance of Loan </label> </div>
+          <div class="border col-3"> <input class = "nofill form-control" type="number" name="CBL1"> </div>
+          <div class="border col-3"> <input class = "nofill form-control" type="number" name="CBL2"> </div>
+          <div class="border col-3"> <input class = "nofill form-control" type="number" name="CBL3"> </div>
+      </div>
+      <div class ="row">
+          <div class="second col-2"> <label style="color:#14345D;font-size:12px;"> Payoff/ARM Reset Date </label> </div>
+          <div class="border col-3"> <input class = "nofill form-control" type="date" name="ARM1"> </div>
+          <div class="border col-3"> <input class = "nofill form-control" type="date" name="ARM2"> </div>
+          <div class="border col-3"> <input class = "nofill form-control" type="date" name="ARM3"> </div>
+      </div>
+      </br>
+      <div class="row">
+        <div class="first col-2" > <label style="color:#FFFFFF;font-size:11px;"> 2nd/ Home Equity Line of Credit. (add all info) </label> </div>
+        <div class="border yellow col-9" > <input class = "nofill form-control" type="text" name="HomeEquity"> </div>
+      </div>
+      </br>
+      <div class="row">
+        <div class="first col-2" > <label style="color:#FFFFFF;">  </label> </div>
+        <div class="first col-3" > <label style="color:#FFFFFF;"> Auto Loans </label> </div>
+        <div class="first col-3" > <label style="color:#FFFFFF;"> Personal Loans </label> </div>
+        <div class="first col-3" > <label style="color:#FFFFFF;"> Other </label> </div>
+      </div>
+      <div class ="row">
+          <div class="second col-2"> <label style="color:#14345D;"> Type of Loan </label> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="text" name="TypeLoan1"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="text" name="TypeLoan2"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="text" name="TypeLoan3"> </div>
+      </div>
+      <div class ="row">
+          <div class="second col-2"> <label style="color:#14345D;"> Loan Amount </label> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="LoanA1"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="LoanA2"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="LoanA3"> </div>
+      </div>
+      <div class ="row">
+          <div class="second col-2"> <label style="color:#14345D;"> Interest Rate </label> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="LoanIR1"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="LoanIR2"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="LoanIR3"> </div>
+      </div>
+      <div class ="row">
+          <div class="second col-2"> <label style="color:#14345D;"> Monthly Payments </label> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="LoanMonthly1"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="LoanMonthly2"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="LoanMonthly3"> </div>
+      </div>
+      <div class ="row">
+          <div class="second col-2"> <label style="color:#14345D;font-size:11.5px;"> Current Balance of Loan </label> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="LoanCB1"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="LoanCB2"> </div>
+          <div class="border yellow col-3"> <input class = "nofill form-control" type="number" name="LoanCB3"> </div>
+      </div>
+      <div class ="row">
+          <div class="second col-2"> <label style="color:#14345D;"> Payoff Date </label> </div>
+          <div class="border col-3"> <input class = "nofill form-control" type="date" name="LoanDate1"> </div>
+          <div class="border col-3"> <input class = "nofill form-control" type="date" name="LoanDate2"> </div>
+          <div class="border col-3"> <input class = "nofill form-control" type="date" name="LoanDate3"> </div>
+      </div>
+      <img src="{% static "6.png" %}"  class="responsive">
+      <div class = "row">
+        <div class="col-11"><input class = "form-control" type="text" name="ApproxMonth"></div>
+      </div>
+      <img src="{% static "7.png" %}"  class="responsive">
+      <div class = "row">
+        <div class="col-11"><textarea class="form-control" rows="3" name="notes2" name="text"></textarea> </div>
+      </div>
+      <img src="{% static "2.png" %}" class="responsive">
+      <hr>
+
+      <img src="{% static "8.png" %}"  class="responsive">
+      <div class = "row">
+        <div class ="second col-11"> <h5 style="text-align:center;"> Family Expense Worksheet </h5> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 gray col-3"> EXPENSES </div>
+          <div class="b2 gray col-4"> Current Year Estimate </div>
+          <div class="b2 gray col-2"> Monthly $ </div>
+          <div class="b2 gray col-2"> Annual $ </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> <b><u> Household: </b></u>  </div>
+          <div class="b3 col-4">  Rent/Mortgage  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Rent1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Rent2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Real Estate Tax  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="EstateTax1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="EstateTax2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Personal Property Tax (i.e. Auto)  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="PropTax1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="PropTax2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  HOA/Condo Fees  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="HOA1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="HOA2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Improvements  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Improv1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Improv2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Furnishings  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Fur1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Fur2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Maintenance  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Main1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Main2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Lawn Care/Landscaping  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Lawn1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Lawn2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Housekeeping  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="keep1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="keep2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Child Care  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="CC1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="CC2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Legal  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Legal1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Legal2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Accounting/Tax Preparation  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Account1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Account2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> <b><u> 2nd Property: </b></u> </div>
+          <div class="b3 col-4">  Rent/Mortgage  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Rent3"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Rent4"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Real Estate Tax  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="EstateTax3"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="EstateTax4"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Personal Property Tax (i.e. Auto)  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="PropTax3"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="PropTax4"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  HOA/Condo Fees  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="HOA3"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="HOA4"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Improvements  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Improv3"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Improv4"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Furnishings  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Fur3"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Fur4"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Maintenance  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Main3"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Main4"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Lawn Care/Landscaping  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Lawn3"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Lawn4"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Housekeeping  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="keep3"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="keep4"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth3"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth4"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"><b><u>  Utilities:</b></u>  </div>
+          <div class="b3 col-4">  Electricity  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Elec1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Elec2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Gas  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="gas1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="gas2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Oil/Heating Fuel  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oil1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oil2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Cell Phone  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="cell1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="cell2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Trash Removal  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="trash1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="trash2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Water/Sewer  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="water1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="water2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Internet/Phone/Cable  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="internet1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="internet2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth5"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth6"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> <b><u> Daily Living: </b></u> </div>
+          <div class="b3 col-4">  Groceries  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="groc1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="groc2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Person Supplies  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="per1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="per2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Salon/Personal Care  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="salon1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="salon2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth7"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth8"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"><b><u>  Debt Management:</b></u>  </div>
+          <div class="b3 col-4">  Auto Loan #1 </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Auto11"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Auto12"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Auto Loan #2  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Auto21"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Auto22"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  401k Loan  </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="401k1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="401k2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Credit Card #1 </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Credit11"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Credit12"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Credit Card #2 </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Credit21"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Credit22"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Credit Card #3 </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Credit31"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Credit32"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Student Loans </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="StudentLoans1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="StudentLoans2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth9"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth10"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"><b><u>  Automobiles:</b></u>  </div>
+          <div class="b3 col-4">  Fuel</div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Fuel1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Fuel2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Service & Repairs </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="serv1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="serv2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth11"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth12"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"><b><u>  Insurance:</b></u>  </div>
+          <div class="b3 col-4">  Homeowner's Insurance </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="HomeInsur1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="HomeInsur2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Auto Insurance </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="AutoInsur1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="AutoInsur2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Health/Medical Insurance </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="health1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="health2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Medical Out-of Pocket Expenses </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="OOP1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="OOP2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Prescription Out-of Pocket Expenses </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Pres1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Pres2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other Medical Health Expenses (i.e. Prescriptions) </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Med1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Med2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Long-Term Care Insurance </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="LTCI1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="LTCI2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Life Insurance </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="LI1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="LI2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Disability Insurance </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="DI1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="DI2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Personal Liability/Umbrella Insurance </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="PLUI1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="PLUI2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other (i.e. FEMA Flood Insurance) </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth13"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth14"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"><b><u>  Dues/Subscriptions:</b></u>  </div>
+          <div class="b3 col-4"> Club Memberships </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Club1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Club2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Gym Memberships </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="GymMem1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="GymMem2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Newspaper/Magazine </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="News1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="News2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth15"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth16"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> <b><u>  Entertainment: </b></u></div>
+          <div class="b3 col-4">  Dining Out </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Dining1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Dining2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Dates/Outings </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Outing1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Outing2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Hobbies </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Hobby1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Hobby2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth17"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth18"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> <b><u>  Clothing: </b></u></div>
+          <div class="b3 col-4">  Clothing, Shoes, Jewelry, Etc... </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Clothes1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Clothes2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> <b><u>  Travel: </b></u></div>
+          <div class="b3 col-4">  Hotel, Flight, Vacation Spending, Etc.. </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Travel1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Travel2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> <b><u>  Gifting: </b></u></div>
+          <div class="b3 col-4">  Holidays, Birthdays, Etc... </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Gift1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Gift2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> <b><u>  Charitable Giving: </b></u></div>
+          <div class="b3 col-4">  Cash, Donation of Items, Etc... </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Give1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Give2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> <b><u>  One-Off Expenses: </b></u></div>
+          <div class="b3 col-4">  Home Improvements </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="HomeImprov1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="HomeImprov2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  College Tuition </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="College1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="College2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Wedding </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Wedding1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Wedding2"> </div>
+      </div>
+      <div class ="row">
+        <div class="b2 col-3">  </div>
+        <div class="b3 col-2"> <label style="font-size:13px;"> Car 1 replacement every </label> </div>
+        <div class="b2 col-1">  <input class = "nofill form-control" type="number" name="C1" placeholder="# years"> </div>
+        <div class="b2 col-1"> <label style="font-size:13px;"> &nbsp years</div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Car1Rep1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Car1Rep2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3">  </div>
+          <div class="b3 col-2"> <label style="font-size:13px;"> Car 2 replacement every </label> </div>
+          <div class="b2 col-1">  <input class = "nofill form-control" type="number" name="C2" placeholder="# years"> </div>
+          <div class="b2 col-1"> <label style="font-size:13px;"> &nbsp years</div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Car2Rep1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Car2Rep2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth19"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="oth20"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> <b><u>  Miscellaneous: </b></u></div>
+          <div class="b3 col-4">  Other - Home Security </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="HS1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="HS2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other - Home Pest Treatment </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Pest1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Pest2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other - Auto Registrations </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="AutoR1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="AutoR2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other - Vacation Home Expenses </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Vac1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Vac2"> </div>
+      </div>
+      <div class ="row">
+          <div class="b2 col-3"> </div>
+          <div class="b3 col-4">  Other - Misc. Costs </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Misc1"> </div>
+          <div class="border col-2"> <input class = "nofill form-control" type="number" name="Misc2"> </div>
+      </div>
+    </br>
+      <div class="row">
+        <div class="col-11"> <label> Notes: </label> </div>
+      </div>
+      <div class = "row">
+        <div class="col-11"><textarea class="form-control" rows="3" name="n2" name="text"></textarea> </div>
+      </div>
+    </br>
+        <img src="{% static "9.png" %}"  class="responsive">
+      <hr>
+
+      <img src="{% static "10.png" %}"  class="responsive">
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 1.    How would you describe your Risk Tolerance? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-3">  <input type="checkbox" name="Risk1" value="True" > <label style="color:#14345D;font-size:13px;"> Conservative </label> </div>
+        <div class="col-3">  <input type="checkbox" name="Risk2" value="True" ><label style="color:#14345D;font-size:13px;"> Somewhat Conservative </label></div>
+        <div class="col-3">  <input type="checkbox" name="Risk3" value="True" > <label style="color:#14345D;font-size:13px;"> Somewhat Aggressive </label></div>
+        <div class="col-3">  <input type="checkbox" name="Risk4" value="True" > <label style="color:#14345D;font-size:13px;">Aggressive </label> </div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 2.    Assuming you have a rate of return objective, what is the annual Rate of Return you have in mind? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-3">  <input type="checkbox" name="RateR1" value="True" > <label style="color:#14345D;font-size:13px;"> 2%-3% </label> </div>
+        <div class="col-3">  <input type="checkbox" name="RateR2" value="True" ><label style="color:#14345D;font-size:13px;"> 4%-6% </label></div>
+        <div class="col-3">  <input type="checkbox" name="RateR3" value="True" > <label style="color:#14345D;font-size:13px;"> >8% </label></div>
+        <div class="col-3">  <input type="checkbox" name="RateR4" value="True" > <label style="color:#14345D;font-size:13px;"> Out Perform the Market </label> </div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 3.    If you had a $1million dollar portfolio and it grew to $1.3million over a couple years, how would you react? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-3">  <input type="checkbox" name="raise1" value="True" > <label style="color:#14345D;font-size:13px;"> Sell Everything </label> </div>
+        <div class="col-3">  <input type="checkbox" name="raise2" value="True" ><label style="color:#14345D;font-size:13px;"> Sell Some Securities </label></div>
+        <div class="col-3">  <input type="checkbox" name="raise3" value="True" > <label style="color:#14345D;font-size:13px;"> Hold your position </label></div>
+        <div class="col-3">  <input type="checkbox" name="raise4" value="True" > <label style="color:#14345D;font-size:13px;"> Buy More </label> </div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 4.    If you had a $1million dollar portfolio and it dropped to $800,000 (20% drop) within a few months, how much "stomach pain/ discomfort" would this cause? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-3">  <input type="checkbox" name="dropF1" value="True" > <label style="color:#14345D;font-size:13px;"> None </label> </div>
+        <div class="col-3">  <input type="checkbox" name="dropF2" value="True" ><label style="color:#14345D;font-size:13px;"> Low Discomfort </label></div>
+        <div class="col-3">  <input type="checkbox" name="dropF3" value="True" > <label style="color:#14345D;font-size:13px;"> Moderate Discomfort </label></div>
+        <div class="col-3">  <input type="checkbox" name="dropF4" value="True" > <label style="color:#14345D;font-size:13px;"> High Discomfort </label> </div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 5.    Based on your answer in question #4, how would you react to the 20% drop in your portfolio? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-3">  <input type="checkbox" name="drop1" value="True" > <label style="color:#14345D;font-size:13px;"> 2%-3% </label> </div>
+        <div class="col-3">  <input type="checkbox" name="drop2" value="True" ><label style="color:#14345D;font-size:13px;"> 4%-6% </label></div>
+        <div class="col-3">  <input type="checkbox" name="drop3" value="True" > <label style="color:#14345D;font-size:13px;"> >8% </label></div>
+        <div class="col-3">  <input type="checkbox" name="drop4" value="True" > <label style="color:#14345D;font-size:13px;"> Out Perform the Market </label> </div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 6.    How important is low volatility? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-3">  <input type="checkbox" name="vol1" value="True" > <label style="color:#14345D;font-size:13px;"> Not at all </label> </div>
+        <div class="col-3">  <input type="checkbox" name="vol2" value="True" ><label style="color:#14345D;font-size:13px;"> Low importance </label></div>
+        <div class="col-3">  <input type="checkbox" name="vol3" value="True" > <label style="color:#14345D;font-size:13px;"> Moderately important </label></div>
+        <div class="col-3">  <input type="checkbox" name="vol4" value="True" > <label style="color:#14345D;font-size:13px;"> Very important </label> </div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 7.    How important is current income from your investment portfolio? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-3">  <input type="checkbox" name="Current1" value="True" > <label style="color:#14345D;font-size:13px;"> Not at all </label> </div>
+        <div class="col-3">  <input type="checkbox" name="Current2" value="True" ><label style="color:#14345D;font-size:13px;"> Low importance </label></div>
+        <div class="col-3">  <input type="checkbox" name="Current3" value="True" > <label style="color:#14345D;font-size:13px;"> Moderately important </label></div>
+        <div class="col-3">  <input type="checkbox" name="Current4" value="True" > <label style="color:#14345D;font-size:13px;"> Very important </label> </div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 8.    How comfortable are you with seeing the value of your portfolio decline overtime to reflect withdrawals during retirement? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-3">  <input type="checkbox" name="decline1" value="True" > <label style="color:#14345D;font-size:13px;"> Not at all </label> </div>
+        <div class="col-3">  <input type="checkbox" name="decline2" value="True" ><label style="color:#14345D;font-size:13px;"> Low Comfort </label></div>
+        <div class="col-3">  <input type="checkbox" name="decline3" value="True" > <label style="color:#14345D;font-size:13px;"> Moderately comfortable </label></div>
+        <div class="col-3">  <input type="checkbox" name="decline4" value="True" > <label style="color:#14345D;font-size:13px;"> Very comfortable </label> </div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 9.    How important is it to leave an inheritance to children or other family members? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-3">  <input type="checkbox" name="in1" value="True" > <label style="color:#14345D;font-size:13px;"> Not at all </label> </div>
+        <div class="col-3">  <input type="checkbox" name="in2" value="True" ><label style="color:#14345D;font-size:13px;"> Low importance </label></div>
+        <div class="col-3">  <input type="checkbox" name="in3" value="True" > <label style="color:#14345D;font-size:13px;"> Moderately important </label></div>
+        <div class="col-3">  <input type="checkbox" name="in4" value="True" > <label style="color:#14345D;font-size:13px;"> Very important </label> </div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 10.    How often do you fly first class? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-3">  <input type="checkbox" name="fly1" value="True" > <label style="color:#14345D;font-size:13px;"> Never </label> </div>
+        <div class="col-3">  <input type="checkbox" name="fly2" value="True" ><label style="color:#14345D;font-size:13px;"> Sometimes </label></div>
+        <div class="col-3">  <input type="checkbox" name="fly3" value="True" > <label style="color:#14345D;font-size:13px;"> Most Times </label></div>
+        <div class="col-3">  <input type="checkbox" name="fly4" value="True" > <label style="color:#14345D;font-size:13px;"> Always </label> </div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 11.    How would you describe your level of investment experience? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-3">  <input type="checkbox" name="exp1" value="True" > <label style="color:#14345D;font-size:13px;"> No Experience </label> </div>
+        <div class="col-3">  <input type="checkbox" name="exp2" value="True" ><label style="color:#14345D;font-size:13px;"> Low Experience </label></div>
+        <div class="col-3">  <input type="checkbox" name="exp3" value="True" > <label style="color:#14345D;font-size:13px;"> Moderate Experience </label></div>
+        <div class="col-3">  <input type="checkbox" name="exp4" value="True" > <label style="color:#14345D;font-size:13px;"> High Experience </label> </div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 12.    How would you describe your outlook for the U.S. economy over the next 12 months? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-3">  <input type="checkbox" name="outlook1" value="True" > <label style="color:#14345D;font-size:13px;"> No Opinion </label> </div>
+        <div class="col-3">  <input type="checkbox" name="outlook2" value="True" ><label style="color:#14345D;font-size:13px;"> Negative </label></div>
+        <div class="col-3">  <input type="checkbox" name="outlook3" value="True" > <label style="color:#14345D;font-size:13px;"> Steady </label></div>
+        <div class="col-3">  <input type="checkbox" name="outlook4" value="True" > <label style="color:#14345D;font-size:13px;"> Positive </label> </div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 13.    When do you expect to make withdrawals from you portfolio? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-3">  <input type="checkbox" name="withdraw1" value="True" > <label style="color:#14345D;font-size:13px;"> <1 Year </label> </div>
+        <div class="col-3">  <input type="checkbox" name="withdraw2" value="True" ><label style="color:#14345D;font-size:13px;"> 2-3 Years </label></div>
+        <div class="col-3">  <input type="checkbox" name="withdraw3" value="True" > <label style="color:#14345D;font-size:13px;"> 5+ Years </label></div>
+        <div class="col-3">  <input type="checkbox" name="withdraw4" value="True" > <label style="color:#14345D;font-size:13px;"> 10+ Years </label> </div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 14.    Which of the alternatives below is more important to you? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-4">  <input type="checkbox" name="Income14" value="True" > <label style="color:#14345D;font-size:13px;"> 1- Income </label> </div>
+        <div class="col-4">  <label style="color:#14345D;font-size:13px;"> OR </label></div>
+        <div class="col-3">  <input type="checkbox" name="Growth14" value="True" > <label style="color:#14345D;font-size:13px;"> 2- Growth </label></div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 15.    Which of the alternatives below is more important to you? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-4">  <input type="checkbox" name="NDY15" value="True" > <label style="color:#14345D;font-size:13px;"> 1- No Down Years </label> </div>
+        <div class="col-4">  <label style="color:#14345D;font-size:13px;"> OR </label></div>
+        <div class="col-3">  <input type="checkbox" name="Market15" value="True" > <label style="color:#14345D;font-size:13px;"> 2- Out Preforming the Market </label></div>
+      </div>
+      <div class ="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> 14.    Which of the alternatives below is more important to you? </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-4">  <input type="checkbox" name="cons16" value="True" > <label style="color:#14345D;font-size:13px;"> 1- Consistent Returns </label> </div>
+        <div class="col-4">  <label style="color:#14345D;font-size:13px;"> OR </label></div>
+        <div class="col-3">  <input type="checkbox" name="reward16" value="True" > <label style="color:#14345D;font-size:13px;"> 2- Higher Rewards </label></div>
+      </div>
+      </br>
+      <div class="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> *This rate of return is hypothetical and used for comparison purposes only. It is not related to any specific investment and there is no guarantee you will actually receive this rate. </label> </div>
+      </div>
+      </br>
+      <div class="row">
+        <div class="col-11"> <label style="color:#14345D;font-size:13px;"> Notes: </label> </div>
+      </div>
+      <div class = "row">
+        <div class="col-11"><textarea class="form-control" rows="3" name="notes3" name="text"></textarea> </div>
+      </div>
+      <img src="{% static "2.png" %}"  class="responsive">
+      <hr>
+
+      <img src="{% static "11.png" %}"  class="responsive">
+      <div class="row">
+        <div class="col-11">  <input type="checkbox" name="CopiesSS" value="True" > <label style="color:#14345D;"> Copies of Social Security statements (Available at www.ssa.gov). </label></div>
+      </div>
+      <div class="row">
+        <div class="col-11">  <input type="checkbox" name="CopiesMort" value="True" > <label style="color:#14345D;"> Copies of mortgage statements (optional). </label></div>
+      </div>
+      <div class="row">
+        <div class="col-11">  <input type="checkbox" name="Copies401k" value="True" > <label style="color:#14345D;"> Copies of 401k/ retirement statements. </label></div>
+      </div>
+      <div class="row">
+        <div class="col-11">  <input type="checkbox" name="CopiesInvest" value="True" > <label style="color:#14345D;"> Copies of all investment statements. </label></div>
+      </div>
+      <div class="row">
+        <div class="col-11">  <input type="checkbox" name="CopiesInsurance" value="True" > <label style="color:#14345D;"> Copies of all insurance (Life, Long-Term Care, Disability, Umbrella policy). </label></div>
+      </div>
+      <div class="row">
+        <div class="col-11">  <input type="checkbox" name="CopiesCollege" value="True" > <label style="color:#14345D;"> Copies of College Savings plan statements. </label></div>
+      </div>
+
+      <div class="row">
+        <div class="col-11"> <label style="color:#14345D;"> You will be redirected to the statement upload page upon submission of this form. Please click the Submit button at top-right to submit. </label> </div>
+      </div>
+      <div class="row">
+        <div class="col-11"> <label style="color:#14345D;"> Notes: </label> </div>
+      </div>
+      <div class = "row">
+        <div class="col-11"><textarea class="form-control" rows="3" name="notes4" name="text"></textarea> </div>
+      </div>
+      <div class="row">
+        <div class="col-11"> <label style="color:#14345D;"> Need help uploading statements? Microsoft Office Lens is a free app on iPhone and Android that allows you to scan and upload documents. </label> </div>
+      </div>
+      <img src="{% static "2.png" %}"  class="responsive">
+      <hr>
+
+      <img src="{% static "12.png" %}"  class="responsive">
+      <img src="{% static "13.png" %}"  class="responsive">
+      <img src="{% static "14.png" %}"  class="responsive">
+      {% csrf_token %}
+    </form>
+  </div>
+</html>
